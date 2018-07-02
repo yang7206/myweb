@@ -196,7 +196,7 @@ showRepos task已经正确输出maven仓库及对应的仓库路径，说明路�
 ## 三.Android SDK环境安装
 
     未完待续~！
-    
+
 ## 四.Android Studio安装
 
     未完待续~！
