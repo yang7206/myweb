@@ -14,7 +14,7 @@ Android开发环境主要需要以下四部分：
   4.Android Studio IDE集成开发环境
 {% endhighlight %}
 
-##一.JAVA环境安装
+## 一.JAVA环境安装
 
 Android主要以Java为主要开发语言，所以JavaSDK安装必不可少。
 使用[JavaSDK下载链接](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)进行下载
@@ -23,8 +23,8 @@ Android主要以Java为主要开发语言，所以JavaSDK安装必不可少。
 ![javasdk](/img/java_download.png "JavaSDK下载")
     
 下载完成后双击打开点击下一步执行默认安装即可，安装过程中会弹窗提示安装jre（JAVA运行环境）,依然是执行默认安装即可
-   
 ![jre_install](/img/jre_install.png "JRE安装")
+
  等待安装完成
     
     
