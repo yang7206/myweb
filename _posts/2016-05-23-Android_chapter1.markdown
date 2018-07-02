@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "1.万事开头难--Android开发环境搭建"
-date:   2016-05-23 11:33:17 -0400
+title:  "第一章.万事开头难--Android开发环境搭建"
+date:   2018-07-03 11:33:17 -0400
 categories: Android
 ---
     
@@ -192,5 +192,6 @@ allprojects {
 
 
 ## 三.Android SDK环境安装
-
+    未完待续~！
 ## 四.Android Studio安装
+    未完待续~！
