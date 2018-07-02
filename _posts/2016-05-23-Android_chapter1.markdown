@@ -83,11 +83,11 @@ Gradle解压即可使用，下载完成后直接解压到需要安装的位置�
 
 ### 2.配置Gradle环境变量
 
-依然是安装以上JAVA配置环境变量的步骤，新增`GRADLE_HOME`和`GRADLE_USER_HOME`变量，同时将`GRADLE_HOME`配置到Path中,将`%GRADLE_HOME%\bin;`加入到Path变量中
+依然是按照以上JAVA配置环境变量的步骤，新增`GRADLE_HOME`和`GRADLE_USER_HOME`变量，同时将`GRADLE_HOME`配置到Path中,将`%GRADLE_HOME%\bin;`加入到Path变量中
     
     GRADLE_HOME是Gradle的安装位置
     GRADLE_USER_HOME是Gradle的工作及缓存仓库文件目录，不配置时默认为用户目录下.gradle文件夹，Gradle会下载或大量缓存文件，建议将文件夹放在非系统盘
-    本文中GRADLE_USER_HOME指定为`D:\.gradle`文件夹
+    本文中GRADLE_USER_HOME指定为D:\.gradle文件夹
     
 
 ![gradle_env](/img/gradle_env.png "Gradle环境配置")
@@ -124,7 +124,7 @@ Gradle解压即可使用，下载完成后直接解压到需要安装的位置�
 
 ### 4.配置Gradle全局镜像
 
->在GRADLE_USER_HOME目录（D:\.gradle文件夹，如果不存在可以自行创建）下新建`init.gradle`文件，将以下代码拷贝到init.gradle文件中
+在GRADLE_USER_HOME目录（D:\\.gradle文件夹，如果不存在可以自行创建）下新建`init.gradle`文件，将以下代码拷贝到init.gradle文件中
 
 ***init.gradle***
 ```
@@ -169,7 +169,9 @@ allprojects {
 
 ```
     
->进入build.gradle文件所在的位置，使用命令`gradle --init-script init.gradle -q showRepos` ,以下使用`D:\android_test`文件夹进行演示:
+
+进入build.gradle文件所在的位置，使用命令`gradle --init-script init.gradle -q showRepos` ,以下使用`D:\android_test`文件夹进行演示:
+
 
     C:\Users\Administrator>d:
     
@@ -186,12 +188,15 @@ allprojects {
     D:\android_test>
 
 
->showRepos task已经正确输出maven仓库及对应的仓库路径，说明路径配置成功，后续的Android Studio的路径将会自动加入该路径进行搜索
+showRepos task已经正确输出maven仓库及对应的仓库路径，说明路径配置成功，后续的Android Studio的路径将会自动加入该路径进行搜索
 
 **Gradle配置完成**
 
 
 ## 三.Android SDK环境安装
+
     未完待续~！
+    
 ## 四.Android Studio安装
+
     未完待续~！
