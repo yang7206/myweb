@@ -243,7 +243,7 @@ showRepos task已经正确输出maven仓库及对应的仓库路径，说明路�
    
    ***Android Studio安装完成***
 
-### 2.Android SDK环境部署
+### 3.Android SDK环境部署
 
    参照以上的JAVA路径部署方式，新建`ANDROID_HOME`环境变量，并将`android_sdk目录`下的`platform-tools`文件夹和`tools`文件夹添加到`Path`路径中。
    
@@ -255,7 +255,7 @@ showRepos task已经正确输出maven仓库及对应的仓库路径，说明路�
     
    ![android_sdk_path2](/img/android_sdk_path2.png "Android SDK 路径")    
    
-### 3.Android SDK环境测试
+### 4.Android SDK环境测试
 
     使用命令行，执行`adb` 命令，如果能输出以下结果，说明Android SDK已经安装成功了
  
@@ -274,7 +274,7 @@ showRepos task已经正确输出maven仓库及对应的仓库路径，说明路�
      -P         port of adb server [default=5037]
      -L SOCKET  listen on given socket for adb server [default=tcp:localhost:5037]
      
-### 3.设置Android Studio中的JDK和Android SDK路径
+### 5.设置Android Studio中的JDK和Android SDK路径
 
     如果JDK和Android SDK的路径有正确设置，再次运行时Android Studio能自动获取到路径，如果没有正确获取安装以下步骤设置：
     
