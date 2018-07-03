@@ -5,12 +5,11 @@ date:   2018-07-03 11:33:17 -0400
 categories: Android
 ---
     
-Android开发环境主要需要以下四部分：
+Android开发环境主要需要以下三部分：
 
     一.JavaSDK开发环境
     二.Gradle工程构建环境
-    三.AndroidSDK开发工具包
-    四.Android Studio IDE集成开发环境
+    三.Android Studio安装及Android SDK环境安装
 
 ## 一.JAVA环境安装
 
@@ -193,10 +192,100 @@ showRepos task已经正确输出maven仓库及对应的仓库路径，说明路�
 **Gradle配置完成**
 
 
-## 三.Android SDK环境安装
+## 三.Android Studio安装及Android SDK环境安装
 
-    未完待续~！
+### 1.下载Android Studio
 
-## 四.Android Studio安装
+   进入[Android Studio中文官网](https://developer.android.google.cn/studio/)，下拉到底部的`Android Studio downloads` 行，下载对应系统平台，
+   可以使用exe安装器也可以使用zip格式的压缩包，本文中已ZIP为例
+   
+   ![android_studio_download](/img/android_studio_download.png "Android Studio下载")
+   
+   ![android_studio_download1](/img/android_studio_download1.png "Android Studio1下载")   
+   
+   点击上图红框，然后勾选弹出的条款执行下载即可。
+   
+   下载完成后解压到指定文件夹，如下图：
+   
+   ![android_studio_install](/img/android_studio_install.png "Android Studio安装")  
+   
+   进入解压目录`android-studio/bin`文件夹下，双击`studio64.exe`打开`Android Studio`
+   
+   ![android_studio_install2](/img/android_studio_install2.png "Android Studio安装2")  
+   
+   打开后，会提示设置代理，点击`Cancel`跳过即可。
+   
+   ![android_studio_run](/img/android_studio_run.png "Android Studio运行") 
 
-    未完待续~！
+### 2.Android SDK安装
+
+    Android SDK现在可以直接通过Android Studio进行安装，运行Android Studio如果没有安装会提示安装
+    
+   如下图，Android Studio会提示`Missing SDK`没有安装SDK，点击`Next`，会要求下载安装Android SDK，下图红框部分为默认勾选，点击`Android SDK Location`下面路径栏右侧的`...`选择需要安装的路径
+   
+   ![android_studio_run1](/img/android_studio_run1.png "Android Studio运行1")   
+   
+   点击`Next`,Android Studio Setup Wizard会列出所有需要安装的条目，点击`Finish`执行下载安装。
+   
+   现在google的下载服务器国内基本都能访问了，等待下载安装完成
+   
+   ![android_studio_run2](/img/android_studio_run2.png "Android Studio运行2")    
+   
+   安装完成后，会解压到刚才指定的文件夹。
+
+   ![android_studio_run4](/img/android_studio_run4.png "Android Studio运行4")    
+
+   ![android_studio_run3](/img/android_studio_run3.png "Android Studio运行3")  
+   
+   点击Finish完成  
+   
+   ![android_studio_finish](/img/android_studio_finish.png "Android Studio运行")  
+   
+   ***Android Studio安装完成***
+
+### 2.Android SDK环境部署
+
+   参照以上的JAVA路径部署方式，新建`ANDROID_HOME`环境变量，并将`android_sdk目录`下的`platform-tools`文件夹和`tools`文件夹添加到`Path`路径中。
+   
+   ![android_sdk_path](/img/android_sdk_path.png "Android SDK 路径")  
+     
+   从文章开始到现在，`Path`路径中应该包含以下部分：
+   
+    %GRADLE_HOME%\bin;%JAVA_HOME%\bin;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;
+    
+   ![android_sdk_path2](/img/android_sdk_path2.png "Android SDK 路径")    
+   
+### 3.Android SDK环境测试
+
+    使用命令行，执行`adb` 命令，如果能输出以下结果，说明Android SDK已经安装成功了
+ 
+    C:\Users\Administrator>adb
+    Android Debug Bridge version 1.0.40
+    Version 4797878
+    Installed as D:\android_sdk\platform-tools\adb.exe
+    
+    global options:
+     -a         listen on all network interfaces, not just localhost
+     -d         use USB device (error if multiple devices connected)
+     -e         use TCP/IP device (error if multiple TCP/IP devices available)
+     -s SERIAL  use device with given serial (overrides $ANDROID_SERIAL)
+     -t ID      use device with given transport id
+     -H         name of adb server host [default=localhost]
+     -P         port of adb server [default=5037]
+     -L SOCKET  listen on given socket for adb server [default=tcp:localhost:5037]
+     
+### 3.设置Android Studio中的JDK和Android SDK路径
+
+    如果JDK和Android SDK的路径有正确设置，再次运行时Android Studio能自动获取到路径，如果没有正确获取安装以下步骤设置：
+    
+    
+   在欢迎页点击右下角`Configure`，然后点击`Project Default`，再次选择`Project Structure`，在弹出框中选择安装路径
+   
+   ![android_studio_finish3](/img/android_studio_finish3.png "Android Studio运行")  
+   
+   选择安装路径然后点击`Apply`保存。
+   
+   ![android_studio_finish2](/img/android_studio_finish2.png "Android Studio运行")  
+
+  
+**完成以上步骤则Android开发环境安装已经完成**
