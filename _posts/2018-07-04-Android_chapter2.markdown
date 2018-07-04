@@ -17,10 +17,10 @@ Android的HelloWorld主要包含以下几部分：
 
 启动Android Studio，在欢迎页面点击`Start a new Android Studio project`开始创建项目。
 
-![项目创建](/img/new_proj.png "项目创建")
+![项目创建](/img/chapter2/new_proj.png "项目创建")
 
 
-![项目创建](/img/new_proj1.png "项目创建")
+![项目创建](/img/chapter2/new_proj1.png "项目创建")
 
 输入框中需要输入以下信息：
 
@@ -44,11 +44,11 @@ Android的HelloWorld主要包含以下几部分：
 
 点击`Next`，需要选择最低版本的SDK，这里使用默认配置勾选`Phone and Tablet`，选择`API 15`即可，（API 15为4.0.3目前已经可以覆盖基本100%的设备，所以没必要向更低版本进行支持了），再次点击`Next`
 
-![预制模板](/img/new_proj2.png "预制模板")
+![预制模板](/img/chapter2/new_proj2.png "预制模板")
 
 上图中为官方的预制模板，可以使用官方预制模板，也可以自行创建文件，这里依然使用默认配置`Empty Activity`模板生成初始的带一个`Activity`的项目，点击`Next`
 
-![生成文件](/img/new_proj3.png "生成文件")
+![生成文件](/img/chapter2/new_proj3.png "生成文件")
 
     Activity Name               Activity名称
     Generate Layout File        是否生成布局文件
@@ -70,14 +70,14 @@ Android的HelloWorld主要包含以下几部分：
 进入主界面后，等待Android Studio索引及构建完成，等待右下角进度条完成。
 
 
-![主界面](/img/proj_main.png "主界面")
+![主界面](/img/chapter2/proj_main.png "主界面")
 
 此时可以看到Android Studio可能会报以下错误：
 
     Error:Failed to find Build Tools revision 27.0.3
     Install Build Tools 27.0.3 and sync project
 
-![构建错误](/img/main_err.png "构建错误")
+![构建错误](/img/chapter2/main_err.png "构建错误")
 
 ***此错误是由于Gradle没有找到配置中对应的`Build Tools Version 27.0.3`的版本***
 
@@ -89,7 +89,7 @@ Android的HelloWorld主要包含以下几部分：
 将`buildToolsVersion`（如果不存在直接添加即可）后面的版本号改为Android SDK中的`build-tools`文件夹下面的版本号，然后再次点击`Try Again`即可重新构建，如下图：
 
 
-![解决错误](/img/main_re.png "解决错误")
+![解决错误](/img/chapter2/main_re.png "解决错误")
 
 ***到此，第一个项目已经创建成功了***
 
@@ -104,34 +104,34 @@ Android模拟器可以支持大部分APP，如果涉及到传感器等硬件相�
 
 - 可以在点击绿三角图标，在弹出框中点击`Create New Virtual Device`创建模拟器。
 
-    ![创建模拟器](/img/create_m.png "创建模拟器")
+    ![创建模拟器](/img/chapter2/create_m.png "创建模拟器")
     
-    ![创建模拟器](/img/create_m1.png "创建模拟器")
+    ![创建模拟器](/img/chapter2/create_m1.png "创建模拟器")
     
     此处下载Android 7.0版本，点击名称后面的`Download`进行下载，在弹出框中点击`Accept`按钮，然后点击`Next`进行下载
-    ![创建模拟器](/img/create_m2.png "创建模拟器")
+    ![创建模拟器](/img/chapter2/create_m2.png "创建模拟器")
     
     模拟器文件较大，需要等待一段时间下载完成。
     
-    ![创建模拟器](/img/create_m3.png "创建模拟器")
+    ![创建模拟器](/img/chapter2/create_m3.png "创建模拟器")
     
     下载完成后，选择下载的设备点击`Next`，在`Verify Configuration`页面如需改名，在AVD Name输入名称即可，本章使用默认配置，点击`Finish`，
     
-    ![创建模拟器](/img/create_m4.png "创建模拟器")
+    ![创建模拟器](/img/chapter2/create_m4.png "创建模拟器")
     
     此时会在`Select Deployment Target`弹出框中的`Available Virtual Devices`选项中多出我们刚才创建的虚拟机，选中点击`OK`即可运行APP了。
 
 - 也可以点击手机图标，打开ADV 打开Android 模拟设备管理器，点击左下角`Create Virtual Device`进行下载安装，步骤同第一种步骤相同，此处不再赘述。
     
-    ![创建模拟器](/img/create_m5.png "创建模拟器")
+    ![创建模拟器](/img/chapter2/create_m5.png "创建模拟器")
 
 模拟器安装完成
 
 ### 2.运行项目
     
-点击绿三角图标![运行](/img/tran.png "运行")，选择刚才创建的虚拟器，点击`OK`，等待虚拟机启动完成，Android Studio会自动运行APP
+点击绿三角图标![运行](/img/chapter2/tran.png "运行")，选择刚才创建的虚拟器，点击`OK`，等待虚拟机启动完成，Android Studio会自动运行APP
 
-![运行项目](/img/app.png "运行项目")
+![运行项目](/img/chapter2/app.png "运行项目")
 
 ### 3.使用真机运行项目
 
@@ -139,34 +139,34 @@ Android模拟器可以支持大部分APP，如果涉及到传感器等硬件相�
 
 以下以华为P10为例：
 
-![开启开发者模式](/img/real_phone.png "开启开发者模式")
+![开启开发者模式](/img/chapter2/real_phone.png "开启开发者模式")
 
-![开启开发者模式](/img/real_phone1.png "开启开发者模式")
+![开启开发者模式](/img/chapter2/real_phone1.png "开启开发者模式")
 
-![开启开发者模式](/img/real_phone2.png "开启开发者模式")
+![开启开发者模式](/img/chapter2/real_phone2.png "开启开发者模式")
 
-![开启开发者模式](/img/real_phone3.png "开启开发者模式")
+![开启开发者模式](/img/chapter2/real_phone3.png "开启开发者模式")
 
 
 进入开发者选项后，开启`USB调试`选项
 
-![开启开发者模式](/img/real_phone4.png "开启开发者模式")
+![开启开发者模式](/img/chapter2/real_phone4.png "开启开发者模式")
 
 然后将设备插入电脑，连接后选择`MTP`，如果第一次可能设备会弹出需要调试设备授权，点击确定即可
 
-![开启开发者模式](/img/real_phone5.png "开启开发者模式")
+![开启开发者模式](/img/chapter2/real_phone5.png "开启开发者模式")
 
-![开启开发者模式](/img/real_phone6.png "开启开发者模式")
+![开启开发者模式](/img/chapter2/real_phone6.png "开启开发者模式")
 
 此时Android Studio的`Logcat`的设备选择列表就会列出设备，并且会有日志输出。
 
-![开启开发者模式](/img/real_phone7.png "开启开发者模式")
+![开启开发者模式](/img/chapter2/real_phone7.png "开启开发者模式")
 
 此时同样点击绿三角，在设备选择弹出框中的`Connected Devices`列表下选择真机设备，点击OK即可运行APP在真机
 
 点击`Logcat`框的左侧栏相机按钮，可以获取屏幕快照
 
-![运行APP](/img/real_phone8.png "运行APP")
+![运行APP](/img/chapter2/real_phone8.png "运行APP")
 
 
 至此，APP已成功运行。
@@ -175,36 +175,36 @@ Android模拟器可以支持大部分APP，如果涉及到传感器等硬件相�
 
 ### 1.Android Studio面板说明
 
-![Android Studio面板](/img/as.png "Android Studio面板")
+![Android Studio面板](/img/chapter2/as.png "Android Studio面板")
 
 使用左侧面板栏的Project/Structure可以切换并显示项目文档结构和当前编辑文件的结构
 
-![Android Studio左侧面板栏](/img/as1.png "Android Studio左侧面板栏")
+![Android Studio左侧面板栏](/img/chapter2/as1.png "Android Studio左侧面板栏")
 
-![Android Studio左侧面板栏](/img/as2.png "Android Studio左侧面板栏")
+![Android Studio左侧面板栏](/img/chapter2/as2.png "Android Studio左侧面板栏")
 
 文本编辑区域，右键点击文件文件，会弹出菜单栏，会提供一些界面拆分等有用的功能
 
-![Android Studio文本编辑区域](/img/as3.png "Android Studio文本编辑区域")
+![Android Studio文本编辑区域](/img/chapter2/as3.png "Android Studio文本编辑区域")
 
-![Android Studio文本编辑区域](/img/as4.png "Android Studio文本编辑区域")
+![Android Studio文本编辑区域](/img/chapter2/as4.png "Android Studio文本编辑区域")
 
 底部左侧区域提供日志，终端，性能分析，构建信息等相关功能，右侧则是设备文件浏览器
 
-![Android Studio底部区域](/img/as5.png "Android Studio底部区域")
+![Android Studio底部区域](/img/chapter2/as5.png "Android Studio底部区域")
 
-![Android Studio底部区域](/img/as6.png "Android Studio底部区域")
+![Android Studio底部区域](/img/chapter2/as6.png "Android Studio底部区域")
 
 
 右侧边栏则是Gradle脚本相关的任务面板
 
-![Android Studio右侧区域](/img/as7.png "Android Studio右侧区域")
+![Android Studio右侧区域](/img/chapter2/as7.png "Android Studio右侧区域")
 
 ### 2.Android 项目结构
 
 以下标注为项目相关的核心文件：
 
-![Android 项目结构](/img/as8.png "Android 项目结构")
+![Android 项目结构](/img/chapter2/as8.png "Android 项目结构")
 
 * `HelloWorld` 
 * |-   `.gradle`    自动生成文件夹
