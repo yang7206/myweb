@@ -59,7 +59,7 @@ Android的HelloWorld主要包含以下几部分：
 
 回到上图，点击`Next`，Android Studio会下载需要的组件，点击`Finish`进入主界面。
 
-在此处创建项目并下载组件过程中，如果没有配置`Gradle`和镜像源可能会因为`Gradle`或组件无法下载而导致卡住，可以参考[·第一章.万事开头难--Android开发环境搭建·](http://www.yangxy.cn/android/2018/07/03/Android_chapter1.html)配置`Gradle`和设置镜像源，重新启动即可。
+>在此处创建项目并下载组件过程中，如果没有配置`Gradle`和镜像源可能会因为`Gradle`或组件无法下载而导致卡住，可以参考[·第一章.万事开头难--Android开发环境搭建·](http://www.yangxy.cn/android/2018/07/03/Android_chapter1.html)配置`Gradle`和设置镜像源，重新启动即可。
 
 ### 2.主界面构建
 
