@@ -131,9 +131,11 @@ Android模拟器可以支持大部分APP，如果涉及到传感器等硬件相�
 
 ### 3.使用真机运行项目
 
-使用Android手机需要先开启开发者模式，大部分手机开启开发者模式流程为：打开设置--系统--关于手机--连续点击内核版本号--直到弹出提示你现在处于开发者模式--设置页出现开发者选项（不同手机可能有所不同，可以自行搜索相关手机需要打开开发者选项）。
+使用Android手机需要先***开启开发者模式***`，大部分手机开启开发者模式流程为：
 
-以下以华为P10为例：
+    打开设置--系统--关于手机--连续点击内核版本号--直到弹出提示你现在处于开发者模式--设置页出现开发者选项（不同手机可能有所不同，可以自行搜索相关手机需要打开开发者选项）。
+
+***以下以华为P10为例：***
 
 ![开启开发者模式](/img/chapter2/real_phone.png "开启开发者模式")
 
@@ -165,7 +167,7 @@ Android模拟器可以支持大部分APP，如果涉及到传感器等硬件相�
 ![运行APP](/img/chapter2/real_phone8.png "运行APP")
 
 
-至此，APP已成功运行。
+***至此，APP已成功运行。***
 
 ## 三.Android项目的项目结构说明
 
@@ -175,19 +177,27 @@ Android模拟器可以支持大部分APP，如果涉及到传感器等硬件相�
 
 使用左侧面板栏的Project/Structure可以切换并显示项目文档结构和当前编辑文件的结构
 
+***Structure 面板：***
+
 ![Android Studio左侧面板栏](/img/chapter2/as1.png "Android Studio左侧面板栏")
+
+***Project 结构面板：***
 
 ![Android Studio左侧面板栏](/img/chapter2/as2.png "Android Studio左侧面板栏")
 
-文本编辑区域，右键点击文件文件，会弹出菜单栏，会提供一些界面拆分等有用的功能
+以下为文本编辑区域，右键点击文件文件，会弹出菜单栏，会提供一些界面拆分等有用的功能
 
 ![Android Studio文本编辑区域](/img/chapter2/as3.png "Android Studio文本编辑区域")
+
+***界面拆分***
 
 ![Android Studio文本编辑区域](/img/chapter2/as4.png "Android Studio文本编辑区域")
 
 底部左侧区域提供日志，终端，性能分析，构建信息等相关功能，右侧则是设备文件浏览器
 
 ![Android Studio底部区域](/img/chapter2/as5.png "Android Studio底部区域")
+
+***设备文件浏览器***
 
 ![Android Studio底部区域](/img/chapter2/as6.png "Android Studio底部区域")
 
@@ -201,6 +211,8 @@ Android模拟器可以支持大部分APP，如果涉及到传感器等硬件相�
 以下标注为项目相关的核心文件：
 
 ![Android 项目结构](/img/chapter2/as8.png "Android 项目结构")
+
+***以树形文件结构展示：***
 
 * `HelloWorld` 
 * |-   `.gradle`    自动生成文件夹
@@ -226,3 +238,6 @@ Android模拟器可以支持大部分APP，如果涉及到传感器等硬件相�
 * |-  `local.properties`  用于gradle使用的相关SDK位置配置文件
 * |-  `settings.gradle`  声明项目引入的模块，在该文件中声明的文件夹将当成程序的模块处理
 * `External Libraries` 当前项目已经以来的相关库文件列表
+
+
+***Android HelloWorld项目运行及相关项目构造介绍完成***
