@@ -31,15 +31,11 @@ Android的HelloWorld主要包含以下几部分：
     Include C++ support     是否引入C++支持
     Include Kotlin support  是否引入Kotlin支持
 
-***图中的Application name，Android Studio会创建以该项目为名称的文件夹， 同时以Application name作为初始的应用名称（后期可以在项目中更改)***
-
-***图中的Company domain ，Android官方建议以公司域名作为项目的唯一标识符，Android Studio会将该字符反转然后加上项目名称生成Package name。***
-
-***图中的Package name ，项目的包名，作为项目的唯一标识符，类似APP的身份证号，Package name不可重复，同一个设备只能安装一个相同Package name的APP，如需要更改，可在项目中进行更改***
-
-***图中的Include C++ support ，表示是否引入C++支持，如果需要进行NDK开发，才需要勾选，勾选后Android Studio会生成CMAKE编译相关的文件和代码，默认不勾选，本文不需要C++，不勾选，如有需要可以后期配置***
-
-***图中的Include Kotlin support ，表示是否引入Kotlin支持，Kotlin目前已经作为Android开发的官方语言，与JAVA可100%兼容，但现在我们暂时使用JAVA开发，暂时不需要Kotlin支持，如有需要可以后期配置***
+* 图中的`Application name`，Android Studio会创建以该项目为名称的文件夹， 同时以Application name作为初始的应用名称（后期可以在项目中更改)
+* 图中的`Company domain` ，Android官方建议以公司域名作为项目的唯一标识符，Android Studio会将该字符反转然后加上项目名称生成Package name。
+* 图中的`Package name` ，项目的包名，作为项目的唯一标识符，类似APP的身份证号，Package name不可重复，同一个设备只能安装一个相同Package name的APP，如需要更改，可在项目中进行更改
+* 图中的`Include C++ support` ，表示是否引入C++支持，如果需要进行NDK开发，才需要勾选，勾选后Android Studio会生成CMAKE编译相关的文件和代码，默认不勾选，本文不需要C++，不勾选，如有需要可以后期配置
+* 图中的`Include Kotlin support` ，表示是否引入Kotlin支持，Kotlin目前已经作为Android开发的官方语言，与JAVA可100%兼容，但现在我们暂时使用JAVA开发，暂时不需要Kotlin支持，如有需要可以后期配置
     
 
 点击`Next`，需要选择最低版本的SDK，这里使用默认配置勾选`Phone and Tablet`，选择`API 15`即可，（API 15为4.0.3目前已经可以覆盖基本100%的设备，所以没必要向更低版本进行支持了），再次点击`Next`
